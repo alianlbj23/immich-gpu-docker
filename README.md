@@ -24,6 +24,8 @@ Before starting containers, prepare:
 3. Docker Engine + Docker Compose plugin installed.
 4. NVIDIA Container Toolkit installed and configured for Docker:
    - Official guide: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
+5. Create/download your `.env` file by following Immich official Docker Compose docs:
+   - https://docs.immich.app/install/docker-compose/
 
 ## Required folders to create first
 
@@ -93,4 +95,3 @@ Then check container status:
 docker compose ps
 docker compose logs -f immich-machine-learning
 ```
-# immich-gpu-docker
