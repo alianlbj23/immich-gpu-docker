@@ -23,9 +23,6 @@ services:
       - /etc/localtime:/etc/localtime:ro
     env_file:
       - .env
-    networks:
-      - default
-      - proxy
     depends_on:
       - redis
       - database
@@ -75,7 +72,3 @@ services:
 
 volumes:
   model-cache:
-
-networks:
-  proxy:
-    external: true
